@@ -8,7 +8,7 @@
 body {
   font-family: 'Archivo Narrow', sans-serif;
   letter-spacing: .03em;
-  background-image: wallpaper.jpg;
+  background-image: url('wallpaper.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
