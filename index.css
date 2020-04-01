@@ -1,0 +1,137 @@
+*{
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Archivo Narrow', sans-serif;
+  letter-spacing: .03em;
+  background-image: ;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.description {
+  text-align: center;
+  font-family: 'Gotu', sans-serif;
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 5% 5px;
+}
+
+
+form {
+  margin: 8%;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type=text] {
+  padding-left: 20px;
+}
+
+label, input {
+  margin-bottom: 10px;
+}
+
+input {
+  border: 2px solid #253B44;
+  border-radius: 20px;
+  background-color: white;
+  height: 50px;
+  font-size: 0.9em;
+}
+
+.submit-button {
+  font-weight: bold; 
+}
+
+.submit-button:hover {
+  background-color: rgb(64, 37, 68);
+  color: white;
+}
+
+.js-error-message {
+  margin: 0 auto;
+  padding: 10px 10px;
+  width: 320px;
+  text-align: center;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+h2 {
+  display: none;
+}
+
+h3 a {
+  color: black;
+  text-decoration: none;
+}
+
+h3 a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  margin: 10% 20px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-container {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 250px;
+  background-color: white;
+}
+
+li img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  h1{
+    margin: 3% 5px;
+    font-size: 3em;
+  }
+
+  form {
+    margin: 4%;
+    align-items: center;
+  }
+  
+  label, input {
+    width: 400px;
+    font-size: 1.2em;
+  }
+  
+  .js-error-message {
+    width: 400px;
+  }
+
+  ul {
+    margin: 5%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+}
