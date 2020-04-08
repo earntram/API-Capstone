@@ -13,7 +13,7 @@ function displayResults(responseJson) {
     <li class="item-container">
       <img src="${responseJson.trails[i].imgSmallMed}">
       <div class="description-container">
-        <h3><a href="${responseJson.trails[i].url}">${responseJson.trails[i].name}</a></h3>
+        <h3><a href="${responseJson.trails[i].url}" target="_blank">${responseJson.trails[i].name}</a></h3>
         <p>${responseJson.trails[i].location}</p>
         <p>Length: ${responseJson.trails[i].length} miles</p>
         <p>Rating: ${responseJson.trails[i].stars}/5</p>
@@ -87,6 +87,19 @@ function watchForm() {
     const inputPostalcode = $('.postalcode').val();
     getCoordinates(inputPostalcode);
   });
+}
+
+function ready(fn) {
+  if (document.readyState != 'loading') {
+    fn();
+  } else if (document.addEventListener) {
+    document.addEventListener('DOMContentLoaded', fn);
+  } else {
+    document.attachEvent('onreadystatechange', function() {
+      if (document.readyState != 'loading')
+        fn();
+    });
+  }
 }
 
 $(function () {
